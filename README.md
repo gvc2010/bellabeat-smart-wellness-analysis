@@ -1,12 +1,12 @@
-# 📊 Estudo de Caso: Como uma empresa de bem-estar pode ser inteligente?
+# Estudo de Caso: Como uma empresa de bem-estar pode ser inteligente?
 
-Este projeto é parte do Programa de Certificação Profissional em Análise de Dados do Google. O objetivo é aplicar o processo completo de análise de dados em um cenário real, utilizando dados de usuários de dispositivos inteligentes da empresa **Bellabeat**, que desenvolve produtos focados na saúde e bem-estar da mulher.
+Este projeto é o TCC do Programa de Certificação Profissional em Análise de Dados do Google. O objetivo é aplicar o processo completo de análise de dados em um cenário real, utilizando dados de usuários de dispositivos inteligentes da empresa **Bellabeat**, que desenvolve produtos focados na saúde e bem-estar da mulher.
 
 ---
 
 ## 🧠 Contexto do Projeto
 
-A Bellabeat deseja aproveitar os dados de seus produtos para identificar oportunidades de crescimento. Como Analista de Dados Júnior, fui encarregado de explorar um conjunto de dados de rastreadores de saúde e gerar **insights úteis** que possam orientar futuras decisões de **marketing** da empresa.
+A Bellabeat quer aproveitar os dados de seus produtos para identificar novas oportunidades de crescimento. Assumindo o papel de analista de dados, fui encarregado de explorar um conjunto de dados de rastreadores de saúde e gerar **insights** que possam orientar futuras decisões de **marketing** da empresa.
 
 ---
 
@@ -25,9 +25,11 @@ A Bellabeat deseja aproveitar os dados de seus produtos para identificar oportun
 - **Fonte dos dados:**  
   [FitBit Fitness Tracker Data (Kaggle)](https://www.kaggle.com/datasets/arashnic/fitbit)  
   Dataset público com dados de rastreadores de saúde anônimos de 30 usuários durante 31 dias.
+  Pode ser encontrado no Kaggle.
 
 - **Formato e Ferramentas:**  
   Arquivos CSV tratados com **R**, **tidyverse**, **RStudio**, e visualizações em **Tableau Public**.
+  Todas as ferramentas listadas acima foram aprendidas no curso da Google.
 
 ---
 
@@ -55,7 +57,7 @@ Ferramentas:
 ---
 
 ### 5. **Compartilhar** 📊
-- Visualizações criadas no Tableau:  
+- As Visualizações foram criadas utilizando o Tableau:  
   [🔗 Link para o Dashboard no Tableau Public](https://public.tableau.com/app/profile/SEU_USUARIO)
 
 - Principais Gráficos:
@@ -67,22 +69,20 @@ Ferramentas:
 ---
 
 ### 6. **Agir** ✅
-**Insights e Recomendações:**
+**Insights:**
 - Usuários que registram o sono e atividade física têm padrões mais consistentes de uso → **incentivar o uso contínuo via notificações e gamificação**
 - Calorias queimadas estão altamente correlacionadas ao número de passos → **foco em metas de caminhada**
 - Apenas parte dos usuários utiliza todos os recursos → **campanhas de onboarding e tutoriais personalizados**
 
-**Ações sugeridas para a Bellabeat:**
+**Ações sugeridas para a empresa:**
 - Investir em campanhas educativas sobre o uso do app e dispositivos
-- Criar desafios diários/semanais no app para aumentar o engajamento
-- Usar os dados de sono e passos como gatilhos para notificações inteligentes
+- Aumentar o engajamento do app com desafios diários ou semanais.
+- Usar os dados de sono e passos como gatilhos para alarmes e notificações para os usuários
 
 ---
 
-## 🧰 Ferramentas Utilizadas
+## 🧰 Ferramentas Utilizadas     
 
-| Ferramenta     | Uso Principal                        |
-|----------------|--------------------------------------|
 | R / RStudio    | Limpeza e análise dos dados          |
 | tidyverse      | Manipulação e transformação de dados |
 | ggplot2        | Gráficos e visualizações             |
@@ -101,6 +101,6 @@ Ferramentas:
 ## 📬 Contato
 
 Guilherme Venturini de Castro  
-[LinkedIn](https://www.linkedin.com/in/SEU-LINKEDIN/)  
-[GitHub](https://github.com/SEU-USUARIO)
+[LinkedIn](https://www.linkedin.com/in/guilherme-venturini-castro/)  
+[GitHub](https://github.com/gvc2010)
 
