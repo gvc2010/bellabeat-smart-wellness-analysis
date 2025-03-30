@@ -1,0 +1,97 @@
+---
+title: "Bellabeat – Estudo de Caso"
+author: "Guilherme Venturini de Castro"
+date: "2025-03-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(janitor)
+library(skimr)
+library(lubridate)
+```
+
+## 1. Perguntar
+
+**Como a análise pode ajudar?**  
+A análise identificará padrões comportamentais claros que possam ser usados para desenvolver campanhas eficazes para atrair e manter clientes engajadas com dispositivos da Bellabeat.
+
+## 2. Preparar
+
+**Fonte dos dados:**  
+FitBit Fitness Tracker Data – Kaggle  
+<https://www.kaggle.com/datasets/arashnic/fitbit>
+
+**Descrição:**  
+Dados gerados por um estudo de 30 dias com 30 mulheres usando rastreadores Fitbit. Inclui passos diários, calorias, sono, minutos de atividade, etc.
+
+**Licença e acesso:**  
+Dados públicos (Open Data). Autor original: **Möbius** (Kaggle).
+
+## 3. Processar
+
+```{r carregar-dados}
+# Caminho dos arquivos
+data_path <- "mturkfitbit_export_3.12.16-4.11.16/Fitabase Data 3.12.16-4.11.16/"
+
+# Carregar arquivos
+activity <- read_csv(paste0(data_path, "dailyActivity_merged.csv")) %>% 
+  clean_names()
+```
+
+## 4. Explorar Dados
+
+```{r explorar-dados}
+# Resumo dos dados
+skim_without_charts(activity)
+head(activity)
+```
+
+## 5. Analisar
+
+```{r correlacao-passos-leve}
+# Correlação entre passos e Light Active Distance
+ggplot(activity, aes(x = total_steps, y = light_active_distance)) +
+  geom_point(alpha = 0.6, color = "darkorange") +
+  geom_smooth(method = "lm", color = "darkred") +
+  labs(title = "Relação entre Passos Diários e Atividade Leve",
+       x = "Total de Passos",
+       y = "Distância em Atividade Leve")
+
+# Cálculo da correlação
+cor(activity$total_steps, activity$light_active_distance, use = "complete.obs")
+```
+
+## 6. Compartilhar
+
+### Principais Insights
+
+**Correlação entre Passos Diários e Distância em Atividades Leves:**
+- Correlação forte (0.776), indicando que a maioria das atividades registradas são leves, como pequenas caminhadas ou tarefas diárias simples.
+- Essa informação sugere uma oportunidade estratégica para incentivar atividades leves ao longo do dia.
+
+## 7. Agir
+
+### Sugestões para Bellabeat
+
+- **Campanha "Pequenos Passos, Grandes Resultados"**:  
+Incentivar pequenas caminhadas diárias, pausas ativas, e atividades rotineiras que somam um número significativo de passos, promovendo a conscientização sobre como pequenas ações podem ter grandes impactos.
+
+- **Gamificação no App**:  
+Implementar desafios semanais ou diários baseados em passos leves, com recompensas para aumentar a motivação e engajamento dos usuários.
+
+### Próximos Passos
+
+- Expandir a pesquisa com uma base de dados maior.
+- Implementar feedback de usuário direto no app para validar campanhas.
+- Monitorar continuamente os resultados através de um dashboard para tomada de decisões ágil.
+
+---
+
+**Conclusão**  
+Este estudo identificou uma clara oportunidade para Bellabeat desenvolver ações eficazes centradas em atividades leves, aumentando o engajamento e valor do produto para as usuárias.
+
+---
+**Fim do Estudo de Caso**
+
