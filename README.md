@@ -1,106 +1,85 @@
-# Estudo de Caso: Como uma empresa de bem-estar pode ser inteligente?
+# 📊 **Bellabeat – Estudo de Caso**
 
-Este projeto é o TCC do Programa de Certificação Profissional em Análise de Dados do Google. O objetivo é aplicar o processo completo de análise de dados em um cenário real, utilizando dados de usuários de dispositivos inteligentes da empresa **Bellabeat**, que desenvolve produtos focados na saúde e bem-estar da mulher.
+**Autor:** Guilherme Venturini de Castro  
+**Data:** 30/03/2025
 
----
+## 📝 Objetivo
 
-## 🧠 Contexto do Projeto
-
-A Bellabeat quer aproveitar os dados de seus produtos para identificar novas oportunidades de crescimento. Assumindo o papel de analista de dados, fui encarregado de explorar um conjunto de dados de rastreadores de saúde e gerar **insights** que possam orientar futuras decisões de **marketing** da empresa.
-
----
-
-## 🔄 Etapas do Processo de Análise de Dados
-
-### 1. **Perguntar** ❓
-- **Qual problema estou tentando resolver?**  
-  Como os usuários interagem com seus dispositivos de saúde e como a Bellabeat pode usar esses dados para aumentar sua base de clientes e engajamento?
-
-- **Objetivo de negócio:**  
-  Descobrir padrões de uso entre os consumidores para **identificar tendências de comportamento**, melhorar a **estratégia de marketing** e aumentar a retenção de clientes.
+Este projeto faz parte do Trabalho de Conclusão de Curso(TCC) do programa de certificação Google Data Analytics Professional Certificate. O objetivo do projeto é: Analisar dados de utilização de dispositivos Fitbit por mulheres, identificando padrões que possam ajudar a empresa Bellabeat a desenvolver estratégias eficazes para atrair e engajar suas usuárias.
 
 ---
 
-### 2. **Preparar** 🧾
-- **Fonte dos dados:**  
-  [FitBit Fitness Tracker Data (Kaggle)](https://www.kaggle.com/datasets/arashnic/fitbit)  
-  Dataset público com dados de rastreadores de saúde anônimos de 30 usuários durante 31 dias.
-  Pode ser encontrado no Kaggle.
+## 🔍 Perguntas-Chave
 
-- **Formato e Ferramentas:**  
-  Arquivos CSV tratados com **R**, **tidyverse**, **RStudio**, e visualizações em **Tableau Public**.
-  Todas as ferramentas listadas acima foram aprendidas no curso da Google.
+**Questão Central:**  
+Como a análise pode identificar padrões de comportamento que ajudem a atrair novas clientes e manter atuais clientes engajadas?
 
 ---
 
-### 3. **Processar** 🧹
-- Verificação de valores ausentes e duplicados  
-- Padronização de nomes de colunas  
-- Conversão de tipos de dados (datas, horas, etc.)  
-- Filtragem de usuários com dados insuficientes  
-- Unificação de datasets com `merge()`
+## 📂 Dados Utilizados
+
+- **Fonte:** [FitBit Fitness Tracker Data – Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit)
+- **Descrição:** Dados coletados ao longo de 30 dias com mulheres utilizando rastreadores Fitbit, incluindo métricas como passos diários, calorias queimadas, frequência de uso, duração do sono, entre outras.
+- **Licença:** Aberta (Open Data), fornecidos originalmente por Möbius.
 
 ---
 
-### 4. **Analisar** 📈
-Principais perguntas respondidas:
-- Quantos minutos de atividade física por dia os usuários praticam?
-- Há correlação entre calorias gastas e tempo ativo?
-- Quantas calorias usuários gastam em média?
-- Como está o nível de engajamento com o app (registro de sono, passos, etc)?
+## ⚙️ Processo da Análise
 
-Ferramentas:
-- Análise exploratória com `ggplot2`
-- Estatísticas descritivas: média, mediana, desvio padrão
-- Gráficos: barras, dispersão, boxplots
+### Etapas Realizadas:
 
----
-
-### 5. **Compartilhar** 📊
-- As Visualizações foram criadas utilizando o Tableau:  
-  [🔗 Link para o Dashboard no Tableau Public](https://public.tableau.com/app/profile/SEU_USUARIO)
-
-- Principais Gráficos:
-  - Média de calorias queimadas por tipo de atividade
-  - Distribuição de minutos ativos vs calorias
-  - Correlação entre passos diários e gasto calórico
-  - Comparativo de usuários que registram sono x não registram
+1. **Perguntar**: Definição clara das questões de negócio e objetivos.
+2. **Preparar**: Escolha e verificação da qualidade e relevância dos dados.
+3. **Processar**: Limpeza e manipulação dos dados utilizando R.
+4. **Analisar**: Análises exploratórias e correlações.
+5. **Compartilhar**: Resultados apresentados através de gráficos e insights.
+6. **Agir**: Sugestões práticas baseadas em dados para implementação na empresa.
 
 ---
 
-### 6. **Agir** ✅
-**Insights:**
-- Usuários que registram o sono e atividade física têm padrões mais consistentes de uso → **incentivar o uso contínuo via notificações e gamificação**
-- Calorias queimadas estão altamente correlacionadas ao número de passos → **foco em metas de caminhada**
-- Apenas parte dos usuários utiliza todos os recursos → **campanhas de onboarding e tutoriais personalizados**
+## 📈 Resultados Principais
 
-**Ações sugeridas para a empresa:**
-- Investir em campanhas educativas sobre o uso do app e dispositivos
-- Aumentar o engajamento do app com desafios diários ou semanais.
-- Usar os dados de sono e passos como gatilhos para alarmes e notificações para os usuários
+**Insights obtidos:**
+
+- **Correlação entre Passos e Distância em Atividade Leve:** Forte correlação positiva (0,776) entre o número de passos dados diariamente e a distância percorrida em atividades leves.
+- **Implicação:** A maioria dos passos diários das usuárias é realizada em atividades consideradas "leves", demonstrando oportunidades para estratégias focadas em aumentar o engajamento através da atividade física leve.
 
 ---
 
-## 🧰 Ferramentas Utilizadas     
+## 📌 Sugestões de Ações para Bellabeat
 
-| R / RStudio    | Limpeza e análise dos dados          |
-| tidyverse      | Manipulação e transformação de dados |
-| ggplot2        | Gráficos e visualizações             |
-| Tableau Public | Dashboard interativo final           |
-| GitHub         | Hospedagem do projeto e documentação |
+- **Campanha "Passos Leves, Grandes Resultados":** Promover desafios e metas semanais relacionadas a passos em atividades leves para incentivar hábitos saudáveis e consistentes.
+- **Gamificação no Aplicativo:** Recompensar usuárias que atingirem objetivos de passos diários ou semanais, criando engajamento e fidelização.
 
 ---
 
-## 📝 Créditos e Fontes
+## 🚀 Próximos Passos
 
-- Dataset: [FitBit Fitness Tracker Dataset - Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit)
-- Estudo de Caso original: Google Data Analytics Professional Certificate
+- Expandir a base de dados para estudos futuros mais robustos e representativos.
+- Integrar feedbacks contínuos no aplicativo para captar percepções e melhorar ofertas personalizadas.
+- Acompanhamento contínuo das métricas com dashboards interativos.
 
 ---
 
-## 📬 Contato
+## 🛠️ Tecnologias Utilizadas
 
-Guilherme Venturini de Castro  
-[LinkedIn](https://www.linkedin.com/in/guilherme-venturini-castro/)  
-[GitHub](https://github.com/gvc2010)
+- Linguagem R
+- R Markdown
+- tidyverse (dplyr, ggplot2, etc.)
 
+---
+
+## 📦 Arquivos do Projeto
+
+- [`Bellabeat – Estudo de Caso.html`](Bellabeat%20%E2%80%93%20Estudo%20de%20Caso.html) _(Relatório detalhado gerado pelo R Markdown)_
+
+---
+
+## 📩 Contato
+
+Guilherme Venturini de Castro   
+🔗 LinkedIn: (https://www.linkedin.com/in/guilherme-venturini-castro/)
+
+---
+
+© 2025 Guilherme Venturini de Castro
