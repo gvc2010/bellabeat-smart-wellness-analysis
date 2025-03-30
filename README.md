@@ -72,6 +72,7 @@ Como a análise pode identificar padrões de comportamento que ajudem a atrair n
 ## 📦 Arquivos do Projeto
 
 - [`Bellabeat – Estudo de Caso.html`](Bellabeat%20%E2%80%93%20Estudo%20de%20Caso.html) _(Relatório detalhado gerado pelo R Markdown)_
+- [`bellabeat.Rmd`](bellabeat.Rmd) _(Script completo utilizado na análise)_
 
 ---
 
